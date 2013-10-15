@@ -26,7 +26,6 @@ public class Line extends Line2D.Double implements ObjectInterface {
 
 	public Line() {
 		super();
-		// TODO Auto-generated constructor stub
 	}
 
 	public Line(double arg0, double arg1, double arg2, double arg3) {
@@ -69,7 +68,7 @@ public class Line extends Line2D.Double implements ObjectInterface {
 	
 	@Override
 	public int getTyp() {
-		// TODO Auto-generated method stub
+
 		return typ;
 	}
 

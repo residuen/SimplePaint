@@ -2,14 +2,16 @@ package de.simplepaint.view;
 import java.awt.Graphics;
 import java.awt.Graphics2D;
 import java.awt.GridLayout;
+import java.awt.event.MouseEvent;
+import java.awt.event.MouseListener;
+import java.awt.event.MouseMotionListener;
 import java.util.ArrayList;
 
 import javax.swing.JPanel;
 
 import de.simplepaint.model.ObjectInterface;
 
-
-public class PaintPanel extends JPanel {
+public class PaintPanel extends JPanel implements MouseListener, MouseMotionListener {
 	
 	private ArrayList<ObjectInterface> objectList = null;
 	
@@ -18,6 +20,9 @@ public class PaintPanel extends JPanel {
 		this.objectList = objectList;
 		
 		setLayout(new GridLayout(1,1));
+		
+		addMouseListener(this);
+		addMouseMotionListener(this);
 	}
 	
 	public void paint(Graphics g)
@@ -43,5 +48,52 @@ public class PaintPanel extends JPanel {
 		
 		
 	}
+
+	// Mouse-Listener
+	@Override
+	public void mouseClicked(MouseEvent arg0) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void mouseEntered(MouseEvent arg0) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void mouseExited(MouseEvent arg0) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void mousePressed(MouseEvent arg0) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void mouseReleased(MouseEvent arg0) {
+		// TODO Auto-generated method stub
+		
+	}
+	// Mouse-Listener - ENDE
+
+	// Mouse-MotionListener
+	@Override
+	public void mouseDragged(MouseEvent arg0) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void mouseMoved(MouseEvent arg0) {
+		// TODO Auto-generated method stub
+		
+	}
+	// Mouse-MotionListener - ENDE
+	
 
 }
